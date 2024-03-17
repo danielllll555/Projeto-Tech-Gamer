@@ -37,29 +37,52 @@ h1 {
     text-decoration: none;
     padding-left: 50px;
     padding-top: 25px;
-
-
-
-
     background: -webkit-linear-gradient(left, rgb(255, 0, 0) 68%, #FFFFFF 32%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.button {
+
+.botaocarrinho {
     background-color: rgb(255, 0, 0); 
     display: inline-block;  /*  tag adicionada para poder ser feita alteração na altura*/
     height: 60px;
     padding-left: 10px; /* tag adicionada para ser ajustado a largura */
-    padding-right: 30px;
+    padding-right: 20px;
     line-height:60px; /* tag usada para centralizar linha na vertical, valor deve ser o mesmo de altura */ 
     box-shadow: 10px 10px 2px #000000;
-    margin-right: 100px;    
+    margin-right:20px;    
     margin-top: 20px;
-    padding-top: px;
+    border-radius: 12px;
 }
-.divGeral button {
+.imgcarrinho{
+  
+    margin-right: 5px
+}
+
+.botaologin {
+    width: 120px;
+    height: 70px;
+    margin-right: 50px;
+    padding-left: 0px;
+    line-height:60px; /* tag usada para centralizar linha na vertical, valor deve ser o mesmo de altura */ 
+    font-size: 20px;
+    box-shadow: 10px 10px 2px #000000; 
+    padding-left: 10px; /* tag adicionada para ser ajustado a largura */
+    background-color: green;
+    border-radius: 12px;
+    
+}
+
+.imglogin {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.divGeral .botaocarrinho{
     border-radius: 5px;
 }
+
 nav {
     text-align: right;
     margin-bottom: 10px;
@@ -67,7 +90,7 @@ nav {
 
 }
 
-a:before {
+.corRed:before {
     content: "";
     width: 10px;
     height: 10px;
@@ -87,7 +110,6 @@ h2 {
     color:  #FFFFFF;
     font-family: 'Times New Roman', Times, serif;
     margin-left: 10%;
-   padding-top: 2%;
 }
 h3 {
     color: white;
@@ -157,3 +179,97 @@ opacity: 0.8;
     width: 500px;
     height: 25px;
 }
+
+
+
+/* CSS DO SLIDER    */ 
+
+section.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: 650px;
+    padding: 0 !important;
+    overflow: hidden;
+
+}
+
+.slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slider-content input, .img-mobile{
+    display: none;
+}
+
+.slide-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;  /* controla o tempo de transição */ 
+    padding-top: 100px;
+
+}
+
+.slide-box img{
+    width: 100%;
+}
+
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn, .nav-auto div{
+    border: 2px solid #FFF; /* cor dos circulos */
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.1s;
+    
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 25px; /* espaço entre os criculos */
+}
+
+.nav-manual .manual-btn:hover{
+    background-color:  #FFF; /* cor do botao ao passar o mouse por cima */
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{
+    background-color:#fff; /* cor do botao ao clicar com o mouse */
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+
+ @media screen and (max-width: 900px) {
+    .img-desktop{
+        display: none;
+    }
+
+    .img-mobile{
+        display: block;
+    }
+
+    .nav-auto, .nav-manual{
+        margin-top: 60%;
+    }
+
+
+/* CSS DO SLIDER    */ 

@@ -3,37 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Gamer - Monte seu PC</title>
+    <title>TECH GAMER -A CASA DO HARDWARE</title>
 
     <link rel="shortcut icon" href="icons8-shopping-cart-24.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 
 </head>
 <body>  
 
 <header>
     
-    <h1>
-        Tech Gamer
-    </h1>
+  <a href="index.html"> <h1> TECH GAMER </h1> </a>  
         <nav>   
-            <a class="titulosnav" href="">Periféricos</a> 
-            <a class="titulosnav" href="">Hardware</a> 
-            <a class="titulosnav" href="">Monitores</a> 
-            <a class="titulosnav" href="">Cadeiras Gamer</a> 
-            <a class="button" href=""> <img src="/icons8-shopping-cart-24.png"> CARRINHO</a>
+            <a class="titulosnav corRed" href="">Periféricos</a> 
+            <a class="titulosnav corRed" href="">Hardware</a> 
+            <a class="titulosnav corRed" href="">Monitores</a> 
+            <a class="titulosnav corRed" href="">Cadeiras Gamer</a> 
+            <a class="botaocarrinho corRed" href=""> <img class="imgcarrinho" src="/icons8-shopping-cart-24.png"> CARRINHO</a>
+
+            <a class="botaologin" href=""> Login <img class="imglogin" src="/login.png"> </a>
+            
             <div class="divBusca">
                 <input type="text" class="buscar2" placeholder="Buscar..."/>
                 <button class="buttonBusca">Buscar</button>
             </div>
-             
+            
         </nav>
 
 </header>
 
 
-<img class="imgpcgamer" src="pc-gamer-1.jpg" >
+<!-- <img class="imgpcgamer" src="pc-gamer-1.jpg" > -->
+
+
+
+
+
+<!-- HTML DO SLIDER -->
+
+<section class="slider">
+    <div class="slider-content">
+        
+        <input type="radio" name="btn-radio" id="radio1">
+        <input type="radio" name="btn-radio" id="radio2">
+        <input type="radio" name="btn-radio" id="radio3">
+
+        <div class="slide-box primeiro">
+            <img class="img-desktop" src="/img slide 1.png" alt="slide 1"  height="80%" width="200px" >
+     <!--      <img class="img-mobile" src="/pc-gamer-1.jpg" alt="slide 1"> -->
+        </div>
+
+        <div class="slide-box">
+            <img class="img-desktop" src="/img slide 2.png" alt="slide 2"  height="80%" width="200px" >
+       <!--       <img class="img-mobile" src="/pc-gamer-1.jpg" alt="slide 1">  -->
+        </div>
+
+        <div class="slide-box">
+            <img class="img-desktop" src="/img slide 3.png" alt="slide 3"  height="80%" width="200px" >
+        <!--       <img class="img-mobile" src="/pc-gamer-1.jpg" alt="slide 3"> -->
+        </div>
+
+      
+
+        <div class="nav-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+
+
+        </div>
+
+        <div class="nav-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+
+    </div>
+</section>
+
+<!-- HTML DO SLIDER -->
+
 
 
     <h2>DESTAQUES DA SEMANA</h2>
@@ -79,6 +129,13 @@
 
     <h2> PRODUTOS NOVOS </h2>
 
+
+
+
+
+    <script src="slide.js"></script>
+
+   
 
 </body>
 </html>
